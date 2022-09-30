@@ -2,6 +2,7 @@ package com.solvd.navigator.domain;
 
 public class Trip {
 
+    private Long id;
     private Point startPoint;
     private Point destinationPoint;
     private TravelType travelType;
@@ -37,5 +38,13 @@ public class Trip {
 
     public void setRoute(Route route) {
         this.route = route;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

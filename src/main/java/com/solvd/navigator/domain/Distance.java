@@ -2,9 +2,10 @@ package com.solvd.navigator.domain;
 
 public class Distance {
 
+    private Long id;
     private Point pointA;
     private Point pointB;
-    private Integer distance;
+    private Integer distanceBetweenPoints;
 
     public Point getPointA() {
         return pointA;
@@ -22,11 +23,19 @@ public class Distance {
         this.pointB = pointB;
     }
 
-    public Integer getDistance() {
-        return distance;
+    public Integer getDistanceBetweenPoints() {
+        return distanceBetweenPoints;
     }
 
-    public void setDistance(Integer distance) {
-        this.distance = distance;
+    public void setDistanceBetweenPoints(Integer distanceBetweenPoints) {
+        this.distanceBetweenPoints = distanceBetweenPoints;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }
