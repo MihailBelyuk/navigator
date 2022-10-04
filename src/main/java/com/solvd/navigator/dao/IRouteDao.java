@@ -1,15 +1,15 @@
 package com.solvd.navigator.dao;
 
-import com.solvd.navigator.domain.Distance;
 import com.solvd.navigator.domain.Route;
 
 import java.util.List;
+import java.util.Optional;
 
-public interface RouteDao {
+public interface IRouteDao {
 
     void insert(Route route);
 
-    Route findById(Long id);
+    Optional<Route> findById(Long id);
 
     void update(Route route);
 

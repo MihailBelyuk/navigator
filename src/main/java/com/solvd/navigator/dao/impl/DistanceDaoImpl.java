@@ -1,26 +1,27 @@
 package com.solvd.navigator.dao.impl;
 
-import com.solvd.navigator.dao.DistanceDao;
+import com.solvd.navigator.dao.IDistanceDao;
 import com.solvd.navigator.dao.MyBatisConfig;
 import com.solvd.navigator.domain.Distance;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
+import java.util.Optional;
 
-public class DistanceDaoImpl implements DistanceDao {
+public class DistanceDaoImpl implements IDistanceDao {
 
     @Override
     public void insert(Distance distance) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            DistanceDao distanceDao = session.getMapper(DistanceDao.class);
+            IDistanceDao distanceDao = session.getMapper(IDistanceDao.class);
             distanceDao.insert(distance);
         }
     }
 
     @Override
-    public Distance findById(Long id) {
+    public Optional<Distance> findById(Long id) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            DistanceDao distanceDao = session.getMapper(DistanceDao.class);
+            IDistanceDao distanceDao = session.getMapper(IDistanceDao.class);
             return distanceDao.findById(id);
         }
     }
@@ -28,7 +29,7 @@ public class DistanceDaoImpl implements DistanceDao {
     @Override
     public void update(Distance distance) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            DistanceDao distanceDao = session.getMapper(DistanceDao.class);
+            IDistanceDao distanceDao = session.getMapper(IDistanceDao.class);
             distanceDao.update(distance);
         }
     }
@@ -36,7 +37,7 @@ public class DistanceDaoImpl implements DistanceDao {
     @Override
     public void delete(Distance distance) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            DistanceDao distanceDao = session.getMapper(DistanceDao.class);
+            IDistanceDao distanceDao = session.getMapper(IDistanceDao.class);
             distanceDao.delete(distance);
         }
     }
@@ -44,7 +45,7 @@ public class DistanceDaoImpl implements DistanceDao {
     @Override
     public List<Distance> findAll() {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            DistanceDao distanceDao = session.getMapper(DistanceDao.class);
+            IDistanceDao distanceDao = session.getMapper(IDistanceDao.class);
             return distanceDao.findAll();
         }
     }

@@ -31,7 +31,7 @@ public abstract class Route {
     public void setDistance() {
         this.distance = 0;
         for (Distance distance : distances) {
-            this.distance = this.distance + distance.getDistance();
+            this.distance = this.distance + distance.getDistanceBetweenPoints();
         }
     }
 }

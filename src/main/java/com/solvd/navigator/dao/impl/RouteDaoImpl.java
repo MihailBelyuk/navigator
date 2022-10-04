@@ -1,26 +1,27 @@
 package com.solvd.navigator.dao.impl;
 
+import com.solvd.navigator.dao.IRouteDao;
 import com.solvd.navigator.dao.MyBatisConfig;
-import com.solvd.navigator.dao.RouteDao;
 import com.solvd.navigator.domain.Route;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
+import java.util.Optional;
 
-public class RouteDaoImpl implements RouteDao {
+public class RouteDaoImpl implements IRouteDao {
 
     @Override
     public void insert(Route route) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            RouteDao routeDao = session.getMapper(RouteDao.class);
+            IRouteDao routeDao = session.getMapper(IRouteDao.class);
             routeDao.insert(route);
         }
     }
 
     @Override
-    public Route findById(Long id) {
+    public Optional<Route> findById(Long id) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            RouteDao routeDao = session.getMapper(RouteDao.class);
+            IRouteDao routeDao = session.getMapper(IRouteDao.class);
             return routeDao.findById(id);
         }
     }
@@ -28,7 +29,7 @@ public class RouteDaoImpl implements RouteDao {
     @Override
     public void update(Route route) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            RouteDao routeDao = session.getMapper(RouteDao.class);
+            IRouteDao routeDao = session.getMapper(IRouteDao.class);
             routeDao.update(route);
         }
     }
@@ -36,7 +37,7 @@ public class RouteDaoImpl implements RouteDao {
     @Override
     public void delete(Route route) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            RouteDao routeDao = session.getMapper(RouteDao.class);
+            IRouteDao routeDao = session.getMapper(IRouteDao.class);
             routeDao.delete(route);
         }
     }
@@ -44,7 +45,7 @@ public class RouteDaoImpl implements RouteDao {
     @Override
     public List<Route> findAll() {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            RouteDao routeDao = session.getMapper(RouteDao.class);
+            IRouteDao routeDao = session.getMapper(IRouteDao.class);
             return routeDao.findAll();
         }
     }

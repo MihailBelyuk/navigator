@@ -5,7 +5,7 @@ import com.solvd.navigator.domain.Trip;
 
 import java.util.List;
 
-public interface PointService {
+public interface IPointService {
 
 
     void create(Point point);

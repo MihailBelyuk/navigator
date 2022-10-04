@@ -1,11 +1,11 @@
 package com.solvd.navigator.service.impl;
 
 import com.solvd.navigator.domain.Point;
-import com.solvd.navigator.service.PointService;
+import com.solvd.navigator.service.IPointService;
 
 import java.util.List;
 
-public class PointServiceImpl implements PointService {
+public class PointServiceImpl implements IPointService {
 
     @Override
     public void create(Point point) {

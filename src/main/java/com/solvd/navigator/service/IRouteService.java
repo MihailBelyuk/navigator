@@ -5,7 +5,7 @@ import com.solvd.navigator.domain.Trip;
 
 import java.util.List;
 
-public interface RouteService {
+public interface IRouteService {
 
     void create(Route route);
 
@@ -17,7 +17,7 @@ public interface RouteService {
 
     List<Route> getAll();
 
-    Route findShortestRoute(Trip trip, List<Trip> trips);
+    Route findShortestRoute(Trip trip);
 
-    Route findAlternativeRoute(Trip trip,  List<Trip> trips);
+    Route findAlternativeRoute(Trip trip);
 }

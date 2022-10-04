@@ -1,26 +1,27 @@
 package com.solvd.navigator.dao.impl;
 
+import com.solvd.navigator.dao.IPointDao;
 import com.solvd.navigator.dao.MyBatisConfig;
-import com.solvd.navigator.dao.PointDao;
 import com.solvd.navigator.domain.Point;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
+import java.util.Optional;
 
-public class PointDaoImpl implements PointDao {
+public class PointDaoImpl implements IPointDao {
 
     @Override
     public void insert(Point point) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            PointDao pointDao = session.getMapper(PointDao.class);
+            IPointDao pointDao = session.getMapper(IPointDao.class);
             pointDao.insert(point);
         }
     }
 
     @Override
-    public Point findById(Long id) {
+    public Optional<Point> findById(Long id) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            PointDao pointDao = session.getMapper(PointDao.class);
+            IPointDao pointDao = session.getMapper(IPointDao.class);
             return pointDao.findById(id);
         }
     }
@@ -28,7 +29,7 @@ public class PointDaoImpl implements PointDao {
     @Override
     public void update(Point point) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            PointDao pointDao = session.getMapper(PointDao.class);
+            IPointDao pointDao = session.getMapper(IPointDao.class);
             pointDao.update(point);
         }
     }
@@ -36,7 +37,7 @@ public class PointDaoImpl implements PointDao {
     @Override
     public void delete(Point point) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            PointDao pointDao = session.getMapper(PointDao.class);
+            IPointDao pointDao = session.getMapper(IPointDao.class);
             pointDao.delete(point);
         }
     }
@@ -44,7 +45,7 @@ public class PointDaoImpl implements PointDao {
     @Override
     public List<Point> findAll() {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
-            PointDao pointDao = session.getMapper(PointDao.class);
+            IPointDao pointDao = session.getMapper(IPointDao.class);
             return pointDao.findAll();
         }
     }

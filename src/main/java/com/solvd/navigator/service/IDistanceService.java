@@ -6,7 +6,7 @@ import com.solvd.navigator.domain.Trip;
 import java.util.List;
 import java.util.zip.DeflaterInputStream;
 
-public interface DistanceService {
+public interface IDistanceService {
 
 
     void create(Distance distance);

@@ -3,24 +3,24 @@ package com.solvd.navigator.domain;
 public class Distance {
 
     private Long id;
-    private Point pointA;
-    private Point pointB;
+    private Point firstPoint;
+    private Point secondPoint;
     private Integer distanceBetweenPoints;
 
-    public Point getPointA() {
-        return pointA;
+    public Point getFirstPoint() {
+        return firstPoint;
     }
 
-    public void setPointA(Point pointA) {
-        this.pointA = pointA;
+    public void setFirstPoint(Point firstPoint) {
+        this.firstPoint = firstPoint;
     }
 
-    public Point getPointB() {
-        return pointB;
+    public Point getSecondPoint() {
+        return secondPoint;
     }
 
-    public void setPointB(Point pointB) {
-        this.pointB = pointB;
+    public void setSecondPoint(Point secondPoint) {
+        this.secondPoint = secondPoint;
     }
 
     public Integer getDistanceBetweenPoints() {

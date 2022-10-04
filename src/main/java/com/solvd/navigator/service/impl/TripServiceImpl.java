@@ -1,11 +1,11 @@
 package com.solvd.navigator.service.impl;
 
 import com.solvd.navigator.domain.Trip;
-import com.solvd.navigator.service.TripService;
+import com.solvd.navigator.service.ITripService;
 
 import java.util.List;
 
-public class TripServiceImpl implements TripService {
+public class TripServiceImpl implements ITripService {
 
     @Override
     public void create(Trip trip) {

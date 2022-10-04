@@ -1,11 +1,11 @@
 package com.solvd.navigator.service.impl;
 
 import com.solvd.navigator.domain.Distance;
-import com.solvd.navigator.service.DistanceService;
+import com.solvd.navigator.service.IDistanceService;
 
 import java.util.List;
 
-public class DistanceServiceImpl implements DistanceService {
+public class DistanceServiceImpl implements IDistanceService {
 
     @Override
     public void create(Distance distance) {

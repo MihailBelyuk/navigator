@@ -5,7 +5,7 @@ import com.solvd.navigator.domain.Trip;
 
 import java.util.List;
 
-public interface TripService {
+public interface ITripService {
 
     void create(Trip trip);
 
