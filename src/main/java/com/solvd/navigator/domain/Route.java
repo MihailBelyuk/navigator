@@ -2,18 +2,11 @@ package com.solvd.navigator.domain;
 
 import java.util.List;
 
-public abstract class Route {
+public class Route {
 
     private Long id;
-    private List<Distance> distances;
-
-    public List<Distance> getDistances() {
-        return distances;
-    }
-
-    public void setDistances(List<Distance> distances) {
-        this.distances = distances;
-    }
+    private Point point;
+    private Long distance;
 
     public Long getId() {
         return id;
@@ -21,5 +14,21 @@ public abstract class Route {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Point getPoint() {
+        return point;
+    }
+
+    public void setPoint(Point point) {
+        this.point = point;
+    }
+
+    public Long getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Long distance) {
+        this.distance = distance;
     }
 }

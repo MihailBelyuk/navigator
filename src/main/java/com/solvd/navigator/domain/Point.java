@@ -6,6 +6,14 @@ public class Point {
     private String city;
     private Long index;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getCity() {
         return city;
     }
@@ -20,13 +28,5 @@ public class Point {
 
     public void setIndex(Long index) {
         this.index = index;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 }
