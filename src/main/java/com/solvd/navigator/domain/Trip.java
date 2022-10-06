@@ -6,7 +6,7 @@ public class Trip {
 
     private Long id;
     private TravelType travelType;
-    private List<Route> allRoutes;
+    private List<Route> routes;
 
     public Long getId() {
         return id;
@@ -24,11 +24,11 @@ public class Trip {
         this.travelType = travelType;
     }
 
-    public List<Route> getAllRoutes() {
-        return allRoutes;
+    public List<Route> getRoutes() {
+        return routes;
     }
 
-    public void setAllRoutes(List<Route> allRoutes) {
-        this.allRoutes = allRoutes;
+    public void setRoutes(List<Route> routes) {
+        this.routes = routes;
     }
 }
