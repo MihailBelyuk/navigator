@@ -1,4 +1,4 @@
 package com.solvd.navigator.domain;
 
-public class ShortestRoute extends Route{
+public class ShortestRoute extends Route {
 }

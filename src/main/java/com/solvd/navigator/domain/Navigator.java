@@ -8,6 +8,7 @@ public class Navigator {
     private String name;
     private Trip currentTrip;
     private List<Trip> trips;
+    private Trip trip;
 
     public Trip getCurrentTrip() {
         return currentTrip;
@@ -40,4 +41,5 @@ public class Navigator {
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
     }
-}
+
+  }

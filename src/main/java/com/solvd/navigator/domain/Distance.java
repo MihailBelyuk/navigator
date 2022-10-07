@@ -3,6 +3,7 @@ package com.solvd.navigator.domain;
 public class Distance {
 
     private Long id;
+
     private Point firstPoint;
     private Point secondPoint;
     private Integer distanceBetweenPoints;

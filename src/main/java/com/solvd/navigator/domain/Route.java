@@ -6,6 +6,7 @@ public abstract class Route {
 
     private Long id;
     private Integer length;
+
     private List<Distance> distances;
 
     public List<Distance> getDistances() {
