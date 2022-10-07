@@ -5,15 +5,8 @@ import java.util.List;
 public abstract class Route {
 
     private Long id;
-    private List<Distance> distances;
-
-    public List<Distance> getDistances() {
-        return distances;
-    }
-
-    public void setDistances(List<Distance> distances) {
-        this.distances = distances;
-    }
+    private List<Segment> segments;
+    private Integer distance;
 
     public Long getId() {
         return id;
@@ -21,5 +14,21 @@ public abstract class Route {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public List<Segment> getSegments() {
+        return segments;
+    }
+
+    public void setSegments(List<Segment> segments) {
+        this.segments = segments;
+    }
+
+    public Integer getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Integer distance) {
+        this.distance = distance;
     }
 }
