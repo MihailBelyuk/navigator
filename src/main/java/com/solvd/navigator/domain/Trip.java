@@ -1,7 +1,5 @@
 package com.solvd.navigator.domain;
 
-import java.util.List;
-
 public class Trip {
 
     private Long id;
