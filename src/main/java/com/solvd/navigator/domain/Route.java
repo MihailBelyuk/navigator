@@ -5,7 +5,7 @@ import java.util.List;
 public abstract class Route {
 
     private Long id;
-    private Integer distance;
+    private Integer length;
     private List<Distance> distances;
 
     public List<Distance> getDistances() {
@@ -24,14 +24,14 @@ public abstract class Route {
         this.id = id;
     }
 
-    public Integer getDistance() {
-        return distance;
+    public Integer getLength() {
+        return length;
     }
 
     public void setDistance() {
-        this.distance = 0;
+        this.length = 0;
         for (Distance distance : distances) {
-            this.distance = this.distance + distance.getDistanceBetweenPoints();
+            this.length = this.length + distance.getDistanceBetweenPoints();
         }
     }
 }

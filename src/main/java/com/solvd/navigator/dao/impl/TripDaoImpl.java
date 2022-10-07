@@ -11,10 +11,10 @@ import java.util.Optional;
 public class TripDaoImpl implements ITripDao {
 
     @Override
-    public void insert(Trip trip) {
+    public void insert(Trip trip, Long navigatorId) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
             ITripDao tripDao = session.getMapper(ITripDao.class);
-            tripDao.insert(trip);
+            tripDao.insert(trip, navigatorId);
         }
     }
 
@@ -27,10 +27,10 @@ public class TripDaoImpl implements ITripDao {
     }
 
     @Override
-    public void update(Trip trip) {
+    public void update(Trip trip, Long navigatorId) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
             ITripDao tripDao = session.getMapper(ITripDao.class);
-            tripDao.update(trip);
+            tripDao.update(trip, navigatorId);
         }
     }
 

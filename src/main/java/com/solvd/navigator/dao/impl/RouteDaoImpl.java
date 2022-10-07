@@ -11,10 +11,10 @@ import java.util.Optional;
 public class RouteDaoImpl implements IRouteDao {
 
     @Override
-    public void insert(Route route) {
+    public void insert(Route route, Long navigatorId) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
             IRouteDao routeDao = session.getMapper(IRouteDao.class);
-            routeDao.insert(route);
+            routeDao.insert(route, navigatorId);
         }
     }
 
@@ -27,10 +27,10 @@ public class RouteDaoImpl implements IRouteDao {
     }
 
     @Override
-    public void update(Route route) {
+    public void update(Route route, Long navigatorId) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
             IRouteDao routeDao = session.getMapper(IRouteDao.class);
-            routeDao.update(route);
+            routeDao.update(route, navigatorId);
         }
     }
 

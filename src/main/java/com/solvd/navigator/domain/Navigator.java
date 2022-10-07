@@ -1,17 +1,20 @@
 package com.solvd.navigator.domain;
 
+import java.util.List;
+
 public class Navigator {
 
     private Long id;
     private String name;
-    private Trip trip;
+    private Trip currentTrip;
+    private List<Trip> trips;
 
-    public Trip getTrip() {
-        return trip;
+    public Trip getCurrentTrip() {
+        return currentTrip;
     }
 
-    public void setTrip(Trip trip) {
-        this.trip = trip;
+    public void setCurrentTrip(Trip currentTrip) {
+        this.currentTrip = currentTrip;
     }
 
     public Long getId() {
@@ -28,5 +31,13 @@ public class Navigator {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<Trip> getTrips() {
+        return trips;
+    }
+
+    public void setTrips(List<Trip> trips) {
+        this.trips = trips;
     }
 }
