@@ -1,6 +1,5 @@
 package com.solvd.navigator.domain;
 
-import javax.swing.text.Segment;
 import java.util.List;
 
 public abstract class Route {

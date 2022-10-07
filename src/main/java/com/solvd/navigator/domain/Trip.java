@@ -27,12 +27,20 @@ public class Trip {
         this.travelType = travelType;
     }
 
-    public List<Route> getRoutes() {
-        return routes;
+    public AlternativeRoute getAlternativeRoute() {
+        return alternativeRoute;
     }
 
-    public void setRoutes(List<Route> routes) {
-        this.routes = routes;
+    public void setAlternativeRoute(AlternativeRoute alternativeRoute) {
+        this.alternativeRoute = alternativeRoute;
+    }
+
+    public ShortRoute getShortRoute() {
+        return shortRoute;
+    }
+
+    public void setShortRoute(ShortRoute shortRoute) {
+        this.shortRoute = shortRoute;
     }
 
     public Point getPointStart() {
