@@ -1,10 +1,12 @@
 package com.solvd.navigator.domain;
 
+import java.util.List;
+
 public class Navigator {
 
     private Long id;
     private String name;
-    private Trip trip;
+    private List<Trip> trips;
 
     public Long getId() {
         return id;
@@ -22,11 +24,11 @@ public class Navigator {
         this.name = name;
     }
 
-    public Trip getTrip() {
-        return trip;
+    public List<Trip> getTrips() {
+        return trips;
     }
 
-    public void setTrip(Trip trip) {
-        this.trip = trip;
+    public void setTrips(List<Trip> trips) {
+        this.trips = trips;
     }
 }

@@ -1,12 +1,13 @@
 package com.solvd.navigator.domain;
 
+import javax.swing.text.Segment;
 import java.util.List;
 
-public class Route {
+public abstract class Route {
 
     private Long id;
-    private Point point;
-    private Long distance;
+    private List<Segment> segments;
+    private Integer distance;
 
     public Long getId() {
         return id;
@@ -16,19 +17,19 @@ public class Route {
         this.id = id;
     }
 
-    public Point getPoint() {
-        return point;
+    public List<Segment> getSegments() {
+        return segments;
     }
 
-    public void setPoint(Point point) {
-        this.point = point;
+    public void setSegments(List<Segment> segments) {
+        this.segments = segments;
     }
 
-    public Long getDistance() {
+    public Integer getDistance() {
         return distance;
     }
 
-    public void setDistance(Long distance) {
+    public void setDistance(Integer distance) {
         this.distance = distance;
     }
 }
