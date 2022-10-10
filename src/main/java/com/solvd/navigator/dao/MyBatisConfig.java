@@ -13,7 +13,7 @@ public class MyBatisConfig {
 
     private static final Logger LOGGER = LogManager.getLogger(MyBatisConfig.class);
 
-    private static final String CONFIG_PATH = "mybatis-config.xml";
+    private static final String CONFIG_PATH = "database/mybatis-config.xml";
     private static SqlSessionFactory sqlSessionFactory;
 
     static {

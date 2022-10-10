@@ -47,4 +47,16 @@ public class Point {
     public void setBegin(boolean begin) {
         this.begin = begin;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Point{");
+        sb.append("id=").append(id);
+        sb.append(", city='").append(city).append('\'');
+        sb.append(", index=").append(index);
+        sb.append(", value=").append(value);
+        sb.append(", begin=").append(begin);
+        sb.append('}');
+        return sb.toString();
+    }
 }

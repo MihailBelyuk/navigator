@@ -1,11 +1,18 @@
 package com.solvd.navigator.service.impl;
 
+import com.solvd.navigator.dao.impl.PointDaoImpl;
 import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.service.IPointService;
 
 import java.util.List;
 
 public class PointServiceImpl implements IPointService {
+
+    private final PointDaoImpl pointDao;
+
+    public PointServiceImpl(){
+        pointDao = new PointDaoImpl();
+    }
 
     @Override
     public void create(Point point) {
@@ -29,6 +36,6 @@ public class PointServiceImpl implements IPointService {
 
     @Override
     public List<Point> getAll() {
-        return null;
+        return pointDao.findAll();
     }
 }

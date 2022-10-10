@@ -17,7 +17,7 @@ public interface IRouteService {
 
     List<Route> getAll();
 
-    void findShortestRoute(Trip trip);
+    void findShortestRoute();
 
     Route findAlternativeRoute(Trip trip);
 }

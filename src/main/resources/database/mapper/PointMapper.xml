@@ -8,7 +8,7 @@
     </insert>
 
     <select id="findById" resultMap="PointResultMap">
-        select id as point_id, city as point_city, index as point_index from points where id = #{id}
+        select id as point_id, city as point_city, indx as point_index from points where id = #{id}
     </select>
 
     <delete id="delete">
@@ -20,13 +20,14 @@
     </update>
 
     <select id="findAll" resultMap="PointResultMap">
-        select id as point_id, city as point_city, index as point_index from points
+        select id as point_id, city as point_city, indx as point_index, value as point_value from points
     </select>
 
     <resultMap id="PointResultMap" type="com.solvd.navigator.domain.Point" autoMapping="false">
         <id column="point_id" property="id"/>
         <result column="point_city" property="city"/>
         <result column="point_index" property="index"/>
+        <result column="point_value" property="value"/>
     </resultMap>
 
 </mapper>

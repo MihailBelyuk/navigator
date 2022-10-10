@@ -1,0 +1,497 @@
+2022-10-10 09:53:31.697 [main] ERROR com.solvd.navigator.dao.MyBatisConfig - Failed to read mybatis-config.xml
+2022-10-10 09:54:14.914 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 09:54:14.952 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:54:14.952 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:54:14.952 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:54:14.952 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:55:19.088 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 09:55:19.118 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:55:19.118 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:55:19.118 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:55:19.118 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:56:22.141 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 09:56:22.157 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:56:22.173 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:56:22.173 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:56:22.173 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:06.044 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 09:57:06.100 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:06.100 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:06.100 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:06.100 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:06.256 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 09:57:06.927 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 720770771.
+2022-10-10 09:57:06.942 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, index as point_index from points
+2022-10-10 09:57:06.973 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 09:57:06.980 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2af616d3]
+2022-10-10 09:57:06.980 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 720770771 to pool.
+2022-10-10 09:57:55.668 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 09:57:55.699 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:55.699 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:55.699 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:55.699 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:57:55.853 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 09:57:56.536 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 720770771.
+2022-10-10 09:57:56.536 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, index as point_index from points
+2022-10-10 09:57:56.567 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 09:57:56.589 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2af616d3]
+2022-10-10 09:57:56.589 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 720770771 to pool.
+2022-10-10 09:58:39.723 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 09:58:39.739 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:58:39.739 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:58:39.739 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:58:39.754 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:58:39.870 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 09:58:40.516 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 720770771.
+2022-10-10 09:58:40.516 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index from points
+2022-10-10 09:58:40.585 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 09:58:40.632 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 09:58:40.632 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2af616d3]
+2022-10-10 09:58:40.632 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 720770771 to pool.
+2022-10-10 09:59:07.449 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 09:59:07.465 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:59:07.465 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:59:07.465 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:59:07.465 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 09:59:07.587 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 09:59:08.231 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 720770771.
+2022-10-10 09:59:08.231 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index from points
+2022-10-10 09:59:08.262 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 09:59:08.300 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 09:59:08.300 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2af616d3]
+2022-10-10 09:59:08.300 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 720770771 to pool.
+2022-10-10 10:19:32.013 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 10:19:32.098 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:32.098 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:32.098 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:32.098 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:55.151 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 10:19:55.167 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:55.167 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:55.167 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:55.167 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:19:55.405 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 10:19:56.038 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1593368350.
+2022-10-10 10:19:56.038 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 10:19:56.069 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 10:19:56.107 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ef8df1e]
+2022-10-10 10:19:56.107 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1593368350 to pool.
+2022-10-10 10:21:12.365 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 10:21:12.383 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:21:12.383 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:21:12.393 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:21:12.393 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:21:12.656 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 10:21:13.464 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1593368350.
+2022-10-10 10:21:13.464 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 10:21:13.518 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 10:21:13.549 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ef8df1e]
+2022-10-10 10:21:13.549 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1593368350 to pool.
+2022-10-10 10:25:22.792 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 10:25:22.845 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:25:22.845 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:25:22.845 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:25:22.845 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 10:25:23.024 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 10:25:23.578 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 988690806.
+2022-10-10 10:25:23.578 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 10:25:23.625 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 10:25:23.679 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 10:25:23.694 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3aee3976]
+2022-10-10 10:25:23.694 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 988690806 to pool.
+2022-10-10 11:51:12.966 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 11:51:12.978 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:51:12.979 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:51:12.979 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:51:12.979 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:51:13.079 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 11:51:13.559 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2103569615.
+2022-10-10 11:51:13.561 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 11:51:13.597 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 11:51:13.676 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 11:51:13.679 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 11:51:13.679 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 11:51:13.681 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 11:51:13.681 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 2103569615 from pool.
+2022-10-10 11:51:13.681 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index from points
+2022-10-10 11:51:13.682 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 11:51:13.690 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 11:51:13.691 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 11:51:13.691 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 11:53:13.034 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 11:53:13.052 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:53:13.053 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:53:13.053 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:53:13.053 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:53:13.154 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 11:53:13.797 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 318794136.
+2022-10-10 11:53:13.800 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 11:53:13.841 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 11:53:13.913 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 11:53:13.916 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 11:53:13.916 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 11:53:13.919 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 11:53:13.919 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 318794136 from pool.
+2022-10-10 11:53:13.919 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index from points
+2022-10-10 11:53:13.920 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 11:53:13.927 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 11:53:13.927 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 11:53:13.928 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 11:56:19.757 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 11:56:19.770 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:56:19.770 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:56:19.770 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:56:19.770 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 11:56:19.867 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 11:56:20.351 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2103569615.
+2022-10-10 11:56:20.355 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 11:56:20.393 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 11:56:20.472 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 11:56:20.474 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 11:56:20.475 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 11:56:20.477 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 11:56:20.477 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 2103569615 from pool.
+2022-10-10 11:56:20.478 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index from points
+2022-10-10 11:56:20.478 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 11:56:20.484 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 11:56:20.484 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 11:56:20.485 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 12:04:48.151 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:04:48.176 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:04:48.177 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:04:48.177 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:04:48.177 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:04:48.314 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:04:48.926 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 318794136.
+2022-10-10 12:04:48.930 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:04:48.972 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:04:49.049 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:04:49.052 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:04:49.052 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:04:49.054 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:04:49.054 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 318794136 from pool.
+2022-10-10 12:04:49.054 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:04:49.055 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:04:49.061 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:04:49.062 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:04:49.062 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:09:01.899 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:09:01.918 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:09:01.918 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:09:01.918 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:09:01.919 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:09:02.026 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:09:02.673 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 318794136.
+2022-10-10 12:09:02.678 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:09:02.720 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:09:02.792 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:09:02.795 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:09:02.795 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:09:02.797 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:09:02.797 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 318794136 from pool.
+2022-10-10 12:09:02.798 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:09:02.798 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:09:02.805 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:09:02.806 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:09:02.806 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:13:17.747 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:13:17.766 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:17.766 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:17.766 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:17.766 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:17.870 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:13:18.438 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 318794136.
+2022-10-10 12:13:18.442 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:13:18.492 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:13:18.565 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:13:18.567 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:13:18.568 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:13:18.569 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:13:18.570 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 318794136 from pool.
+2022-10-10 12:13:18.570 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:13:18.571 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:13:18.616 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:13:18.617 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:13:18.617 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:13:59.052 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:13:59.065 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:59.065 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:59.065 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:59.065 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:13:59.165 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:13:59.670 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2103569615.
+2022-10-10 12:13:59.674 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:13:59.715 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:13:59.792 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:13:59.796 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 12:13:59.797 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 12:13:59.798 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:13:59.798 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 2103569615 from pool.
+2022-10-10 12:13:59.799 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:13:59.799 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:13:59.809 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:13:59.810 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 12:13:59.810 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 12:15:12.227 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:15:12.246 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:15:12.247 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:15:12.247 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:15:12.247 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:15:12.355 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:15:12.967 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 318794136.
+2022-10-10 12:15:12.970 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:15:13.009 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:15:13.080 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:15:13.083 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:15:13.084 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:15:13.085 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:15:13.086 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 318794136 from pool.
+2022-10-10 12:15:13.086 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:15:13.087 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:15:13.094 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:15:13.095 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:15:13.095 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:20:31.270 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:20:31.292 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:20:31.292 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:20:31.293 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:20:31.293 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:20:31.412 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:20:32.026 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 318794136.
+2022-10-10 12:20:32.029 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:20:32.075 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:20:32.144 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:20:32.147 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:20:32.148 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:20:32.150 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:20:32.150 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 318794136 from pool.
+2022-10-10 12:20:32.150 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:20:32.177 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:20:32.184 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:20:32.185 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:20:32.185 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:21:23.348 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:21:23.361 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:21:23.361 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:21:23.361 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:21:23.361 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:21:23.462 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:21:23.959 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 214320652.
+2022-10-10 12:21:23.961 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:21:24.000 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:21:24.065 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:21:24.077 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@cc6460c]
+2022-10-10 12:21:24.078 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 214320652 to pool.
+2022-10-10 12:21:24.080 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:21:24.080 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 214320652 from pool.
+2022-10-10 12:21:24.080 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:21:24.086 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:21:24.094 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:21:24.095 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@cc6460c]
+2022-10-10 12:21:24.095 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 214320652 to pool.
+2022-10-10 12:22:58.745 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:22:58.793 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:22:58.794 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:22:58.794 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:22:58.795 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:22:59.127 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:23:00.893 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 318794136.
+2022-10-10 12:23:00.901 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:23:01.122 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:23:01.424 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:23:01.427 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@13006998]
+2022-10-10 12:23:01.428 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 318794136 to pool.
+2022-10-10 12:24:22.221 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:24:22.222 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 318794136 from pool.
+2022-10-10 12:24:22.223 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:24:22.228 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:24:32.780 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:24:32.792 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:24:32.793 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:24:32.793 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:24:32.793 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:24:32.891 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:24:33.414 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2103569615.
+2022-10-10 12:24:33.417 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:24:33.453 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:24:33.532 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:24:33.537 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 12:24:33.537 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 12:24:33.539 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:24:33.539 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 2103569615 from pool.
+2022-10-10 12:24:33.539 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:24:33.540 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:24:33.547 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:24:33.547 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7d61eccf]
+2022-10-10 12:24:33.548 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 2103569615 to pool.
+2022-10-10 12:49:10.566 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 12:49:10.579 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:49:10.579 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:49:10.579 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:49:10.579 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 12:49:10.682 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:49:11.163 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1379207867.
+2022-10-10 12:49:11.166 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 12:49:11.203 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 12:49:11.288 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 12:49:11.292 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52350abb]
+2022-10-10 12:49:11.293 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1379207867 to pool.
+2022-10-10 12:49:11.294 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 12:49:11.295 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1379207867 from pool.
+2022-10-10 12:49:11.295 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 12:49:11.296 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 12:49:11.303 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 12:49:11.303 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52350abb]
+2022-10-10 12:49:11.303 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1379207867 to pool.
+2022-10-10 13:03:47.025 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 13:03:47.036 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:03:47.037 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:03:47.037 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:03:47.037 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:03:47.140 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:03:47.659 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1379207867.
+2022-10-10 13:03:47.662 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 13:03:47.698 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 13:03:47.778 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 13:03:47.782 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52350abb]
+2022-10-10 13:03:47.782 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1379207867 to pool.
+2022-10-10 13:03:47.785 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:03:47.786 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1379207867 from pool.
+2022-10-10 13:03:47.786 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 13:03:47.787 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 13:03:47.793 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 13:03:47.794 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@52350abb]
+2022-10-10 13:03:47.794 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1379207867 to pool.
+2022-10-10 13:25:18.239 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 13:25:18.251 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:25:18.251 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:25:18.251 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:25:18.252 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:25:18.350 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:25:18.864 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1746578747.
+2022-10-10 13:25:18.867 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 13:25:18.901 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 13:25:18.985 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 13:25:18.987 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:25:18.988 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:25:18.990 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:25:18.991 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1746578747 from pool.
+2022-10-10 13:25:18.991 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 13:25:18.992 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 13:25:18.998 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 13:25:18.999 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:25:18.999 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:26:38.931 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 13:26:38.944 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:26:38.944 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:26:38.944 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:26:38.944 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:26:39.041 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:26:39.532 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1746578747.
+2022-10-10 13:26:39.534 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 13:26:39.571 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 13:26:39.651 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 13:26:39.654 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:26:39.655 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:26:39.657 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:26:39.658 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1746578747 from pool.
+2022-10-10 13:26:39.658 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 13:26:39.659 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 13:26:39.665 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 13:26:39.665 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:26:39.666 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:27:47.131 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 13:27:47.143 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:27:47.143 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:27:47.143 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:27:47.144 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:27:47.262 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:27:47.763 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1746578747.
+2022-10-10 13:27:47.765 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 13:27:47.801 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 13:27:47.879 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 13:27:47.884 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:27:47.884 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:27:47.885 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:27:47.885 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1746578747 from pool.
+2022-10-10 13:27:47.885 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 13:27:47.886 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 13:27:47.892 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 13:27:47.893 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:27:47.893 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:29:12.045 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 13:29:12.058 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:12.058 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:12.058 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:12.058 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:12.162 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:29:12.658 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1746578747.
+2022-10-10 13:29:12.661 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 13:29:12.700 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 13:29:12.783 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 13:29:12.786 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:29:12.787 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:29:12.790 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:29:12.790 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1746578747 from pool.
+2022-10-10 13:29:12.790 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 13:29:12.791 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 13:29:12.798 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 13:29:12.798 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:29:12.799 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:29:47.389 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 13:29:47.402 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:47.402 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:47.402 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:47.402 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:29:47.497 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:29:47.923 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1746578747.
+2022-10-10 13:29:47.926 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 13:29:47.964 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 13:29:48.045 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 13:29:48.048 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:29:48.049 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:29:48.050 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:29:48.051 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1746578747 from pool.
+2022-10-10 13:29:48.051 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 13:29:48.052 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 13:29:48.059 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 13:29:48.059 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:29:48.060 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:30:30.749 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 13:30:30.761 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:30:30.762 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:30:30.762 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:30:30.762 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 13:30:30.868 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:30:31.374 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1746578747.
+2022-10-10 13:30:31.377 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 13:30:31.415 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 13:30:31.498 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 13:30:31.501 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:30:31.502 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 13:30:31.504 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 13:30:31.504 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1746578747 from pool.
+2022-10-10 13:30:31.505 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 13:30:31.505 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 13:30:31.513 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 13:30:31.514 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 13:30:31.514 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 14:03:59.883 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2022-10-10 14:03:59.895 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 14:03:59.895 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 14:03:59.895 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 14:03:59.896 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2022-10-10 14:03:59.995 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 14:04:00.495 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1746578747.
+2022-10-10 14:04:00.496 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==>  Preparing: select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+2022-10-10 14:04:00.534 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - ==> Parameters: 
+2022-10-10 14:04:00.626 [main] DEBUG com.solvd.navigator.dao.ISegmentDao.findAll - <==      Total: 148
+2022-10-10 14:04:00.629 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 14:04:00.630 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.
+2022-10-10 14:04:00.632 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2022-10-10 14:04:00.633 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 1746578747 from pool.
+2022-10-10 14:04:00.633 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==>  Preparing: select id as point_id, city as point_city, indx as point_index, value as point_value from points
+2022-10-10 14:04:00.634 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - ==> Parameters: 
+2022-10-10 14:04:00.640 [main] DEBUG com.solvd.navigator.dao.IPointDao.findAll - <==      Total: 32
+2022-10-10 14:04:00.641 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@681aad3b]
+2022-10-10 14:04:00.641 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 1746578747 to pool.

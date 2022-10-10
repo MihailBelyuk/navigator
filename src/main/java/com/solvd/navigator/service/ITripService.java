@@ -17,4 +17,6 @@ public interface ITripService {
 
     List<Trip> getAll();
 
+    Trip getTripParameters();
+
 }

@@ -1,6 +1,5 @@
 package com.solvd.navigator.service;
 
-import com.solvd.navigator.domain.Distance;
 import com.solvd.navigator.domain.Navigator;
 
 import java.util.List;
