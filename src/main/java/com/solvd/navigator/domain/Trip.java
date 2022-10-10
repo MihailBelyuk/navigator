@@ -1,31 +1,20 @@
 package com.solvd.navigator.domain;
 
-import java.util.List;
-
 public class Trip {
 
     private Long id;
-    private Point startPoint;
-    private Point destinationPoint;
     private TravelType travelType;
-    private List<Route> allRoutes;
-    private ShortestRoute shortestRoute;
     private AlternativeRoute alternativeRoute;
+    private ShortRoute shortRoute;
+    private Point pointStart;
+    private Point pointEnd;
 
-    public Point getStartPoint() {
-        return startPoint;
+    public Long getId() {
+        return id;
     }
 
-    public void setStartPoint(Point startPoint) {
-        this.startPoint = startPoint;
-    }
-
-    public Point getDestinationPoint() {
-        return destinationPoint;
-    }
-
-    public void setDestinationPoint(Point destinationPoint) {
-        this.destinationPoint = destinationPoint;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public TravelType getTravelType() {
@@ -36,14 +25,6 @@ public class Trip {
         this.travelType = travelType;
     }
 
-    public ShortestRoute getShortestRoute() {
-        return shortestRoute;
-    }
-
-    public void setShortestRoute(ShortestRoute shortestRoute) {
-        this.shortestRoute = shortestRoute;
-    }
-
     public AlternativeRoute getAlternativeRoute() {
         return alternativeRoute;
     }
@@ -52,19 +33,27 @@ public class Trip {
         this.alternativeRoute = alternativeRoute;
     }
 
-    public Long getId() {
-        return id;
+    public ShortRoute getShortRoute() {
+        return shortRoute;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setShortRoute(ShortRoute shortRoute) {
+        this.shortRoute = shortRoute;
     }
 
-    public List<Route> getAllRoutes() {
-        return allRoutes;
+    public Point getPointStart() {
+        return pointStart;
     }
 
-    public void setAllRoutes(List<Route> allRoutes) {
-        this.allRoutes = allRoutes;
+    public void setPointStart(Point pointStart) {
+        this.pointStart = pointStart;
+    }
+
+    public Point getPointEnd() {
+        return pointEnd;
+    }
+
+    public void setPointEnd(Point pointEnd) {
+        this.pointEnd = pointEnd;
     }
 }

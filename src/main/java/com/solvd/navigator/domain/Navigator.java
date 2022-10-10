@@ -41,5 +41,6 @@ public class Navigator {
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
     }
-
   }
+
+
