@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.solvd.navigator.dao.ISegmentDao">
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into segments(name, length) values(#{name},#{length})
+    </insert>
+
+    <select id="select" resultMap="SegmentResultMap">
+        select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from
+        segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id where id =
+        #{s.id}
+    </select>
+
+    <update id="update">
+        update segments set name = #{name}, length = #{length}
+    </update>
+
+    <delete id="delete">
+        delete from segments where id = #{id}
+    </delete>
+
+    <select id="findAll" resultMap="SegmentResultMap">
+        select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from
+        segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+    </select>
+
+    <resultMap id="SegmentResultMap" type="com.solvd.navigator.domain.Segment" autoMapping="false">
+        <id property="id" column="segment_id"/>
+        <result property="name" column="segment_name"/>
+        <result property="length" column="segment_length"/>
+        <collection property="points" resultMap="com.solvd.navigator.dao.IPointDao.PointResultMap"/>
+    </resultMap>
+
+</mapper>

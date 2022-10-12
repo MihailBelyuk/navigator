@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.solvd.navigator.dao.IPointDao">
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into points(city, index) values = (#{city}, #{index})
+    </insert>
+
+    <select id="findById" resultMap="PointResultMap">
+        select id as point_id, city as point_city, indx as point_index from points where id = #{id}
+    </select>
+
+    <delete id="delete">
+        delete from points where id = #{id}
+    </delete>
+
+    <update id="update">
+        update points set city = #{city}, index = #{index} where id = #{id}
+    </update>
+
+    <select id="findAll" resultMap="PointResultMap">
+        select id as point_id, city as point_city, indx as point_index, value as point_value from points
+    </select>
+
+    <resultMap id="PointResultMap" type="com.solvd.navigator.domain.Point" autoMapping="false">
+        <id column="point_id" property="id"/>
+        <result column="point_city" property="city"/>
+        <result column="point_index" property="index"/>
+        <result column="point_value" property="value"/>
+    </resultMap>
+
+</mapper>

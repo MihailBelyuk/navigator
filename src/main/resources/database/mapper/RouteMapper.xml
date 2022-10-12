@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.solvd.navigator.dao.IRouteDao">
+
+    <insert id="insert" keyProperty="route.id" useGeneratedKeys="true">
+        insert into routes(length, trip_id) values (#{route.length}, #{tripId})
+    </insert>
+
+    <select id="findById" resultMap="RouteResultMap">
+        select r.id as route_id, r.length as route_length, p.id as point_id, p.city as point_city from routes r left
+        join route_point rp on rp.route_id = r.id left join points p on rp.point_id = p.id where r.id = #{id}
+    </select>
+
+    <update id="update">
+        update routes set length = #{route.length} where id = #{route.id}
+    </update>
+
+    <delete id="delete">
+        delete from routes where id = #{id}
+    </delete>
+
+    <select id="findAll" resultMap="RouteResultMap">
+        select r.id as route_id, r.length as route_length, p.id as point_id, p.city as point_city from routes r left
+        join route_point rp on rp.route_id = r.id left join points p on rp.point_id = p.id
+    </select>
+
+    <resultMap id="RouteResultMap" type="com.solvd.navigator.domain.Route">
+        <id property="id" column="route_id"/>
+        <result property="length" column="route_length"/>
+        <collection property="distances" resultMap="com.solvd.navigator.dao.IDistanceDao.DistanceResultMap"/>
+    </resultMap>
+
+</mapper>

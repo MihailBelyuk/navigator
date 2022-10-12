@@ -30,5 +30,6 @@ public abstract class Route {
 
     public void setDistance(Integer distance) {
         this.distance = distance;
+
     }
 }

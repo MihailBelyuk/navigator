@@ -6,8 +6,8 @@ public class Trip {
     private TravelType travelType;
     private AlternativeRoute alternativeRoute;
     private ShortRoute shortRoute;
-    private Point pointStart;
-    private Point pointEnd;
+    private Point startPoint;
+    private Point finishPoint;
 
     public Long getId() {
         return id;
@@ -41,19 +41,19 @@ public class Trip {
         this.shortRoute = shortRoute;
     }
 
-    public Point getPointStart() {
-        return pointStart;
+    public Point getStartPoint() {
+        return startPoint;
     }
 
-    public void setPointStart(Point pointStart) {
-        this.pointStart = pointStart;
+    public void setStartPoint(Point startPoint) {
+        this.startPoint = startPoint;
     }
 
-    public Point getPointEnd() {
-        return pointEnd;
+    public Point getFinishPoint() {
+        return finishPoint;
     }
 
-    public void setPointEnd(Point pointEnd) {
-        this.pointEnd = pointEnd;
+    public void setFinishPoint(Point finishPoint) {
+        this.finishPoint = finishPoint;
     }
 }

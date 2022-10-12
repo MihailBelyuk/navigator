@@ -5,7 +5,7 @@ public class Point {
     private Long id;
     private String city;
     private Integer index;
-    private Integer currentDistance;
+    private Integer value;
     private  boolean begin;
 
     public Long getId() {
@@ -32,12 +32,12 @@ public class Point {
         this.index = index;
     }
 
-    public Integer getCurrentDistance() {
-        return currentDistance;
+    public Integer getValue() {
+        return value;
     }
 
-    public void setCurrentDistance(Integer currentDistance) {
-        this.currentDistance = currentDistance;
+    public void setValue(Integer value) {
+        this.value = value;
     }
 
     public boolean isBegin() {
@@ -46,5 +46,17 @@ public class Point {
 
     public void setBegin(boolean begin) {
         this.begin = begin;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Point{");
+        sb.append("id=").append(id);
+        sb.append(", city='").append(city).append('\'');
+        sb.append(", index=").append(index);
+        sb.append(", value=").append(value);
+        sb.append(", begin=").append(begin);
+        sb.append('}');
+        return sb.toString();
     }
 }
