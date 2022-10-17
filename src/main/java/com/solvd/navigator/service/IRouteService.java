@@ -1,6 +1,5 @@
 package com.solvd.navigator.service;
 
-import com.solvd.navigator.domain.BusRoute;
 import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Route;
 import com.solvd.navigator.domain.Trip;

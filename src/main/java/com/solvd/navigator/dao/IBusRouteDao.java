@@ -1,7 +1,6 @@
 package com.solvd.navigator.dao;
 
 import com.solvd.navigator.domain.BusRoute;
-import com.solvd.navigator.domain.Route;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -20,4 +19,5 @@ public interface IBusRouteDao {
     List<BusRoute> findAll();
 
     void insertBusRoutePoints(@Param("busRouteId") Long busRouteId, @Param("pointId") Long pointId);
+
 }

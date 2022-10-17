@@ -16,4 +16,5 @@ public interface IPointDao {
     void delete(Point point);
 
     List<Point> findAll();
+
 }

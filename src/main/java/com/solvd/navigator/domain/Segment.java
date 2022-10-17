@@ -1,14 +1,13 @@
 package com.solvd.navigator.domain;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class Segment {
 
     private Long id;
-    private List<Point> points;
     private String name;
     private Integer length;
+    private List<Point> points;
 
     public Long getId() {
         return id;
@@ -17,7 +16,6 @@ public class Segment {
     public void setId(Long id) {
         this.id = id;
     }
-
 
     public List<Point> getPoints() {
         return points;

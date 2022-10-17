@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 import java.util.Optional;
 
-public interface IRouteDao  {
+public interface IRouteDao {
 
     void insert(Route route);
 
@@ -20,4 +20,5 @@ public interface IRouteDao  {
     List<Route> findAll();
 
     void insertRoutePoints(@Param("route") Route route, @Param("point") Point point);
+
 }

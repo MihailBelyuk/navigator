@@ -3,7 +3,6 @@ package com.solvd.navigator.dao.impl;
 import com.solvd.navigator.dao.ITripDao;
 import com.solvd.navigator.dao.MyBatisConfig;
 import com.solvd.navigator.domain.Trip;
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
@@ -15,7 +14,7 @@ public class TripDaoImpl implements ITripDao {
     public void insert(Trip trip, Long navigatorId, Long startPointId, Long finishPointId, Long routeId) {
         try (SqlSession session = MyBatisConfig.getSqlSessionFactory().openSession(true)) {
             ITripDao tripDao = session.getMapper(ITripDao.class);
-            tripDao.insert(trip, navigatorId,startPointId,finishPointId,routeId);
+            tripDao.insert(trip, navigatorId, startPointId, finishPointId, routeId);
         }
     }
 

@@ -6,9 +6,9 @@ public class Point {
     private String city;
     private Integer index;
     private Integer value;
+    private String previousCity;
     private boolean begin;
     private boolean previous;
-    private String previousCity;
 
     public Long getId() {
         return id;

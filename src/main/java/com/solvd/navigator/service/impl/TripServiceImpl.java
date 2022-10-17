@@ -68,14 +68,10 @@ public class TripServiceImpl implements ITripService {
             scannerData = inputUtils.inputData(scanner);
             scanner.nextLine();
             for (Point point : allPoints) {
-                if (point.getCity().equals(scannerData.getStartPointInput())) {
-                    startPoint = point;
-                }
+                startPoint = getStartPoint(scannerData, startPoint, point);
             }
             for (Point point : allPoints) {
-                if (point.getCity().equals(scannerData.getDestinationPointInput())) {
-                    destinationPoint = point;
-                }
+                destinationPoint = getDestinationPoint(scannerData, destinationPoint, point);
             }
             checkStartAndDestinationPoints(startPoint, destinationPoint);
         }
@@ -83,6 +79,20 @@ public class TripServiceImpl implements ITripService {
         checkTravelType(trip);
         scanner.close();
         return trip;
+    }
+
+    private Point getDestinationPoint(ScannerData scannerData, Point destinationPoint, Point point) {
+        if (point.getCity().equals(scannerData.getDestinationPointInput())) {
+            destinationPoint = point;
+        }
+        return destinationPoint;
+    }
+
+    private Point getStartPoint(ScannerData scannerData, Point startPoint, Point point) {
+        if (point.getCity().equals(scannerData.getStartPointInput())) {
+            startPoint = point;
+        }
+        return startPoint;
     }
 
     private void checkStartAndDestinationPoints(Point startPoint, Point destinationPoint) {
@@ -94,7 +104,7 @@ public class TripServiceImpl implements ITripService {
     private void buildTrip(ScannerData scannerData, Trip trip, Point startPoint, Point destinationPoint) {
         trip.setStartPoint(startPoint);
         trip.setFinishPoint(destinationPoint);
-        trip.setTravelType(scannerData.getTravelType());
+        trip.setTravelType(scannerData.getTravelTypeInput());
     }
 
     private void checkTravelType(Trip trip) {
@@ -104,10 +114,9 @@ public class TripServiceImpl implements ITripService {
             trip.setRoute(route);
             create(trip);
         } else if (trip.getTravelType().equals(TravelType.BUS)) {
-            if (busRouteService.findBusRoute(trip)==null) {
+            if (busRouteService.findBusRoute(trip) == null) {
                 getTripParameters();
             }
         }
-
     }
 }

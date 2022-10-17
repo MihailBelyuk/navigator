@@ -59,13 +59,18 @@ public class BusRouteServiceImpl implements IBusRouteService {
                             busRoute = route;
                             actualBusRoutes = new ArrayList<>();
                             actualBusRoutes.add(busRoute);
-                            System.out.println("You need bus with route: " + route.getName());
+                            System.out.println("You need to take bus with route: " + route.getName());
                             break;
                         }
                     }
                 }
             }
         }
+        actualBusRoutes = checkStartPointAndBusRoute(trip, actualBusRoutes, busRoute, startPoint);
+        return actualBusRoutes;
+    }
+
+    private List<BusRoute> checkStartPointAndBusRoute(Trip trip, List<BusRoute> actualBusRoutes, BusRoute busRoute, Point startPoint) {
         if (startPoint == null) {
             System.out.println("Sorry, can't build bus route, because no buses pass through provided start point.");
             System.out.println("Please try other trip parameters.\n");
@@ -81,10 +86,10 @@ public class BusRouteServiceImpl implements IBusRouteService {
         List<BusRoute> relativeRoutes = new ArrayList<>();
         List<BusRoute> routesWithSameStart = new ArrayList<>();
         List<BusRoute> routesWithSameDest = new ArrayList<>();
+        findRoutesWithSamePoint(start, destination, routesWithSameStart, routesWithSameDest);
         BusRoute firstBusRoute = null;
         BusRoute secondBusRoute = null;
         Point interceptionPoint = null;
-        findRoutesWithSamePoint(start, destination, routesWithSameStart, routesWithSameDest);
         for (BusRoute routeWithSameStart : routesWithSameStart) {
             for (Point point : routeWithSameStart.getRoutePoints()) {
                 for (BusRoute routeWithSameDest : routesWithSameDest) {
@@ -100,6 +105,11 @@ public class BusRouteServiceImpl implements IBusRouteService {
                 }
             }
         }
+        checkSecondBusRouteOrConfirm(start, destination, firstBusRoute, secondBusRoute, interceptionPoint);
+        return collectInterceptingRoutes(firstBusRoute, secondBusRoute);
+    }
+
+    private void checkSecondBusRouteOrConfirm(Point start, Point destination, BusRoute firstBusRoute, BusRoute secondBusRoute, Point interceptionPoint) {
         if (secondBusRoute == null) {
             System.out.println("Sorry, can't build bus route, because there are no buses passing through provided destination point.");
             System.out.println("Please try other trip parameters.\n");
@@ -107,7 +117,6 @@ public class BusRouteServiceImpl implements IBusRouteService {
             System.out.println("Take bus route " + firstBusRoute.getName() + " from " + start.getCity() + " to " + interceptionPoint.getCity() +
                     ", than get on the bus " + secondBusRoute.getName() + " to " + destination.getCity());
         }
-        return collectInterceptingRoutes(firstBusRoute, secondBusRoute);
     }
 
     private List<BusRoute> collectInterceptingRoutes(BusRoute firstBusRoute, BusRoute secondBusRoute) {

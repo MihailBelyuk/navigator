@@ -65,20 +65,19 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
         List<Point> routePoints = new ArrayList<>();
         Point processedPoint;
         Point currentPoint = null;
-        String prevCity = null;
-        String city = null;
-        Point endPoint = null;
+        Point destinationPoint = null;
         Point startPoint = null;
+        String prevCity = null;
         for (Point point : allPoints) {
-            if (point.getCity().equals(trip.getStartPoint().getCity())) {
-                startPoint = buildPoint(point);
-            }
-            if (point.getCity().equals(trip.getDestinationPoint().getCity())) {
-                endPoint = point;
-            }
+            startPoint = getCheckedStartPoint(trip, startPoint, point);
+            destinationPoint = getCheckedDestinationPoint(trip, destinationPoint, point);
         }
-        if (endPoint != null) {
-            while (endPoint.getValue() == 0) {
+        if (startPoint != null && destinationPoint != null) {
+            if (startPoint.getCity().equals(destinationPoint.getCity())) {
+                buildRouteWithSameStartAndDestination(trip, route, routePoints, destinationPoint, startPoint);
+                return route;
+            }
+            while (destinationPoint.getValue() == 0) {
                 int pointValue = 100000;
                 for (Point point : allPoints) {
                     if (point.getValue() == 0) {
@@ -106,9 +105,46 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
                 setPointParameters(allPoints, currentPoint, prevCity, pointValue);
             }
         }
-        if (endPoint != null) {
-            city = endPoint.getCity();
+        assert destinationPoint != null;
+        adjustPreviousPoint(trip, allPoints, routePoints, destinationPoint);
+        routePoints.add(startPoint);
+        Collections.reverse(routePoints);
+        int routeLength = destinationPoint.getValue() - 1;
+        getTripInformation(trip, routePoints, routeLength);
+        buildRoute(route, routePoints, routeLength);
+        create(route);
+        createRoutePoints(route, routePoints);
+        return route;
+    }
+
+    private Point getCheckedDestinationPoint(Trip trip, Point destinationPoint, Point point) {
+        if (point.getCity().equals(trip.getDestinationPoint().getCity())) {
+            destinationPoint = point;
         }
+        return destinationPoint;
+    }
+
+    private Point getCheckedStartPoint(Trip trip, Point startPoint, Point point) {
+        if (point.getCity().equals(trip.getStartPoint().getCity())) {
+            startPoint = buildPoint(point);
+        }
+        return startPoint;
+    }
+
+    private void buildRouteWithSameStartAndDestination(Trip trip, Route route, List<Point> routePoints, Point destinationPoint, Point startPoint) {
+        System.out.println("Start point - " + trip.getStartPoint().getCity());
+        System.out.println("End destination - " + trip.getDestinationPoint().getCity());
+        System.out.println("Route length is - " + 0 + " km");
+        route.setDistance(0);
+        routePoints.add(destinationPoint);
+        routePoints.add(startPoint);
+        route.setRoutePoints(routePoints);
+        create(route);
+    }
+
+    private void adjustPreviousPoint(Trip trip, List<Point> allPoints, List<Point> routePoints, Point destinationPoint) {
+        String city;
+        city = destinationPoint.getCity();
         int s = 0;
         while (s == 0) {
             for (Point point : allPoints) {
@@ -121,14 +157,6 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
                 }
             }
         }
-        routePoints.add(startPoint);
-        Collections.reverse(routePoints);
-        int routeLength = endPoint.getValue() - 1;
-        getTripInformation(trip, routePoints, routeLength);
-        buildRoute(route, routePoints, routeLength);
-        create(route);
-        createRoutePoints(route, routePoints);
-        return route;
     }
 
     private Point getProcessedPoint(List<Point> segmentPoints, Point point1) {
