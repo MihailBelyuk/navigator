@@ -20,7 +20,9 @@
     </delete>
 
     <select id="findAll" resultMap="NavigatorResultMap">
-        select id as navigator_id, name as navigator_name from navigators
+        select n.id as navigator_id, name as navigator_name, t.id as trip_id, r.id as route_id, p.id as point_id from navigators n left
+        join trips t on t.navigator_id = n.id left join routes r on t.route_id = r.id left join route_points rps on
+        r.id = rps.id left join points p on rps.point_id = p.id
     </select>
 
     <resultMap id="NavigatorResultMap" type="com.solvd.navigator.domain.Navigator">

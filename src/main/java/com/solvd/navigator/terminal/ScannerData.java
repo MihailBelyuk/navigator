@@ -16,7 +16,7 @@ public class ScannerData {
         this.startPointInput = startPointInput;
     }
 
-    public String getEndPointInput() {
+    public String getDestinationPointInput() {
         return endPointInput;
     }
 

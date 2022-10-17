@@ -3,7 +3,46 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.solvd.navigator.dao.ITripDao">
 
-    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        insert into trips(travel_type, navigator_id) values (#{trip.travelType})
+    <insert id="insert" useGeneratedKeys="true" keyProperty="trip.id">
+        insert into trips(travel_type, navigator_id, start_point_id, finish_point_id, route_id) values
+        (#{trip.travelType}, #{navigatorId}, #{startPointId}, #{finishPointId}, #{routeId})
     </insert>
+
+    <delete id="delete">
+        delete from trips where id = #{id}
+    </delete>
+
+    <select id="findById" resultMap="TripResultMap">
+        select t.id as trip_id, t.travel_type as trip_travel_type, sp.id as start_point_id, sp.city as start_point_city,
+        sp.indx as start_point_index, fp.id as finish_point_id, fp.city as finish_point_city, fp.indx as
+        finish_point_index
+        from trips t
+        left join points sp on t.start_point_id = sp.id
+        left join points fp on t.finish_point_id = fp.id
+        where t.id = #{id}
+    </select>
+
+    <select id="findAll" resultMap="TripResultMap">
+        select t.id as trip_id, t.travel_type as trip_travel_type, r.id as route_id, r.distance as route_distance,
+        rp.id as point_id, rp.city as point_city, rp.indx as point_index, sp.id as start_point_id, sp.city as
+        start_point_city, sp.indx as start_point_index, fp.id as finish_point_id, fp.city as finish_point_city, fp.indx
+        as finish_point_index
+        from trips t
+        left join routes r on t.route_id = r.id
+        left join route_points rps on rps.route_id = r.id
+        left join points rp on rps.point_id = rp.id
+        left join points sp on t.start_point_id = sp.id
+        left join points fp on fp.id = t.finish_point_id
+    </select>
+
+    <resultMap id="TripResultMap" type="com.solvd.navigator.domain.Trip" autoMapping="false">
+        <id property="id" column="trip_id"/>
+        <result property="travelType" column="trip_travel_type"/>
+        <association property="route" resultMap="com.solvd.navigator.dao.IRouteDao.RouteResultMap"/>
+        <association property="startPoint" resultMap="com.solvd.navigator.dao.IPointDao.PointResultMap"
+                     columnPrefix="start_"/>
+        <association property="finishPoint" resultMap="com.solvd.navigator.dao.IPointDao.PointResultMap"
+                     columnPrefix="finish_"/>
+    </resultMap>
+
 </mapper>

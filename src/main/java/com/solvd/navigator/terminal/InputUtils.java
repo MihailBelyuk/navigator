@@ -6,21 +6,23 @@ import java.util.Scanner;
 
 public class InputUtils {
 
-    public ScannerData inputData() {
+    public ScannerData inputData(Scanner scanner) {
         ScannerData currentData = new ScannerData();
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Type in start point: ");
-            String startCity = getStringInput(scanner).toUpperCase();
-            currentData.setStartPointInput(startCity);
-            System.out.print("Type in destination point: ");
-            String endCity = getStringInput(scanner).toUpperCase();
-            currentData.setEndPointInput(endCity);
-            currentData.setTravelType(getTravelTypeInput(scanner));
-            return currentData;
-        }
+        String startCity = getStartPointInput(scanner).toUpperCase();
+        currentData.setStartPointInput(startCity);
+        String endCity = getFinishPointInput(scanner).toUpperCase();
+        currentData.setEndPointInput(endCity);
+        currentData.setTravelType(getTravelTypeInput(scanner));
+        return currentData;
     }
 
-    public String getStringInput(Scanner scanner) {
+    public String getStartPointInput(Scanner scanner) {
+        System.out.print("Enter start point: ");
+        return scanner.nextLine();
+    }
+
+    public String getFinishPointInput(Scanner scanner) {
+        System.out.print("Enter destination point: ");
         return scanner.nextLine();
     }
 
@@ -37,9 +39,6 @@ public class InputUtils {
                 break;
             case 2:
                 travelType = TravelType.BUS;
-                break;
-            case 3:
-                travelType = TravelType.ON_FOOT;
                 break;
             default:
                 break;

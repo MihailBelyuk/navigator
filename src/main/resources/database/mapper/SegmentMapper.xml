@@ -7,10 +7,10 @@
         insert into segments(name, length) values(#{name},#{length})
     </insert>
 
-    <select id="select" resultMap="SegmentResultMap">
+    <select id="findById" resultMap="SegmentResultMap">
         select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from
-        segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id where id =
-        #{s.id}
+        segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id where s.id =
+        #{id}
     </select>
 
     <update id="update">

@@ -1,21 +1,19 @@
 package com.solvd.navigator.domain;
 
+import com.solvd.navigator.service.impl.TripServiceImpl;
+
 import java.util.List;
 
 public class Navigator {
 
     private Long id;
     private String name;
-    private Trip currentTrip;
     private List<Trip> trips;
-    private Trip trip;
 
-    public Trip getCurrentTrip() {
-        return currentTrip;
-    }
-
-    public void setCurrentTrip(Trip currentTrip) {
-        this.currentTrip = currentTrip;
+    public Navigator() {
+        TripServiceImpl tripService = new TripServiceImpl();
+        System.out.println("Welcome to NaviLaba Navigator!!\nTo find necessary route enter trip parameters.");
+        tripService.getTripParameters();
     }
 
     public Long getId() {
@@ -41,6 +39,16 @@ public class Navigator {
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
     }
-  }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Navigator{");
+        sb.append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", trips=").append(trips);
+        sb.append('}');
+        return sb.toString();
+    }
+}
 
 

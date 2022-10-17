@@ -4,6 +4,7 @@ import com.solvd.navigator.domain.Route;
 import com.solvd.navigator.domain.Trip;
 
 import java.util.List;
+import java.util.Scanner;
 
 public interface ITripService {
 

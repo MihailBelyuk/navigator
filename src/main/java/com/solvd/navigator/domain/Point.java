@@ -6,7 +6,9 @@ public class Point {
     private String city;
     private Integer index;
     private Integer value;
-    private  boolean begin;
+    private boolean begin;
+    private boolean previous;
+    private String previousCity;
 
     public Long getId() {
         return id;
@@ -48,6 +50,22 @@ public class Point {
         this.begin = begin;
     }
 
+    public boolean isPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(boolean previous) {
+        this.previous = previous;
+    }
+
+    public String getPreviousCity() {
+        return previousCity;
+    }
+
+    public void setPreviousCity(String previousCity) {
+        this.previousCity = previousCity;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Point{");
@@ -56,6 +74,8 @@ public class Point {
         sb.append(", index=").append(index);
         sb.append(", value=").append(value);
         sb.append(", begin=").append(begin);
+        sb.append(", previous=").append(previous);
+        sb.append(", previousCity='").append(previousCity).append('\'');
         sb.append('}');
         return sb.toString();
     }
