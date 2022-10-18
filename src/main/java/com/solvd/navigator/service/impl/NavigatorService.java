@@ -3,7 +3,7 @@ package com.solvd.navigator.service.impl;
 import com.solvd.navigator.dao.INavigatorDao;
 import com.solvd.navigator.dao.impl.NavigatorDaoImpl;
 import com.solvd.navigator.domain.Navigator;
-import com.solvd.navigator.exception.ResourceNotFoundException;
+import com.solvd.navigator.domain.exception.ResourceNotFoundException;
 import com.solvd.navigator.service.INavigatorService;
 
 import java.util.List;

@@ -6,13 +6,13 @@ import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Route;
 import com.solvd.navigator.domain.TravelType;
 import com.solvd.navigator.domain.Trip;
-import com.solvd.navigator.exception.ResourceNotFoundException;
+import com.solvd.navigator.domain.exception.ResourceNotFoundException;
 import com.solvd.navigator.service.IBusRouteService;
 import com.solvd.navigator.service.IPointService;
 import com.solvd.navigator.service.IRouteService;
 import com.solvd.navigator.service.ITripService;
-import com.solvd.navigator.terminal.InputUtils;
-import com.solvd.navigator.terminal.ScannerData;
+import com.solvd.navigator.service.terminal.InputUtils;
+import com.solvd.navigator.service.terminal.ScannerData;
 
 import java.util.List;
 import java.util.Scanner;

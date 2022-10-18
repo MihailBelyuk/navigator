@@ -6,7 +6,7 @@ import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Route;
 import com.solvd.navigator.domain.Segment;
 import com.solvd.navigator.domain.Trip;
-import com.solvd.navigator.exception.ResourceNotFoundException;
+import com.solvd.navigator.domain.exception.ResourceNotFoundException;
 import com.solvd.navigator.service.ICalculate;
 import com.solvd.navigator.service.IPointService;
 import com.solvd.navigator.service.IRouteService;

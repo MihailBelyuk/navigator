@@ -3,7 +3,7 @@ package com.solvd.navigator.service.impl;
 import com.solvd.navigator.dao.ISegmentDao;
 import com.solvd.navigator.dao.impl.SegmentDaoImpl;
 import com.solvd.navigator.domain.Segment;
-import com.solvd.navigator.exception.ResourceNotFoundException;
+import com.solvd.navigator.domain.exception.ResourceNotFoundException;
 import com.solvd.navigator.service.ISegmentService;
 
 import java.util.List;
