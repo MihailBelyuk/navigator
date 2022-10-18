@@ -1,5 +1,6 @@
 package com.solvd.navigator.domain;
 
+import com.solvd.navigator.service.ITripService;
 import com.solvd.navigator.service.impl.TripServiceImpl;
 
 import java.util.List;
@@ -11,7 +12,7 @@ public class Navigator {
     private List<Trip> trips;
 
     public Navigator() {
-        TripServiceImpl tripService = new TripServiceImpl();
+        ITripService tripService = new TripServiceImpl();
         System.out.println("Welcome to NaviLaba Navigator!!\nTo find necessary route enter trip parameters.");
         tripService.getTripParameters();
     }

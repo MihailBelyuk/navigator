@@ -8,11 +8,11 @@ public class InputUtils {
 
     public ScannerData inputData(Scanner scanner) {
         ScannerData currentData = new ScannerData();
-        String startCity = getStartPointInput(scanner).toUpperCase();
+        String startCity = getStartPointInput(scanner).toUpperCase().strip();
         currentData.setStartPointInput(startCity);
-        String endCity = getFinishPointInput(scanner).toUpperCase();
+        String endCity = getFinishPointInput(scanner).toUpperCase().strip();
         currentData.setEndPointInput(endCity);
-        currentData.setTravelType(getTravelTypeInput(scanner));
+        currentData.setTravelTypeInput(getTravelTypeInput(scanner));
         return currentData;
     }
 

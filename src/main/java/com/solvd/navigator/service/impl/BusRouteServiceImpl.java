@@ -1,5 +1,6 @@
 package com.solvd.navigator.service.impl;
 
+import com.solvd.navigator.dao.IBusRouteDao;
 import com.solvd.navigator.dao.impl.BusRouteDaoImpl;
 import com.solvd.navigator.domain.BusRoute;
 import com.solvd.navigator.domain.Point;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class BusRouteServiceImpl implements IBusRouteService {
 
-    private final BusRouteDaoImpl busRouteDao;
+    private final IBusRouteDao busRouteDao;
 
     public BusRouteServiceImpl() {
         busRouteDao = new BusRouteDaoImpl();

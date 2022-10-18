@@ -1,5 +1,6 @@
 package com.solvd.navigator.service.impl;
 
+import com.solvd.navigator.dao.IPointDao;
 import com.solvd.navigator.dao.impl.PointDaoImpl;
 import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.exception.ResourceNotFoundException;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class PointServiceImpl implements IPointService {
 
-    private final PointDaoImpl pointDao;
+    private final IPointDao pointDao;
 
     public PointServiceImpl() {
         pointDao = new PointDaoImpl();

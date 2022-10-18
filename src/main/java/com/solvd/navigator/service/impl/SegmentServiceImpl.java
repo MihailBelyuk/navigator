@@ -1,5 +1,6 @@
 package com.solvd.navigator.service.impl;
 
+import com.solvd.navigator.dao.ISegmentDao;
 import com.solvd.navigator.dao.impl.SegmentDaoImpl;
 import com.solvd.navigator.domain.Segment;
 import com.solvd.navigator.exception.ResourceNotFoundException;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class SegmentServiceImpl implements ISegmentService {
 
-    private final SegmentDaoImpl segmentDao;
+    private final ISegmentDao segmentDao;
 
     public SegmentServiceImpl() {
         segmentDao = new SegmentDaoImpl();

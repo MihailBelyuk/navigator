@@ -1,5 +1,6 @@
 package com.solvd.navigator.service.impl;
 
+import com.solvd.navigator.dao.IRouteDao;
 import com.solvd.navigator.dao.impl.RouteDaoImpl;
 import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Route;
@@ -7,7 +8,9 @@ import com.solvd.navigator.domain.Segment;
 import com.solvd.navigator.domain.Trip;
 import com.solvd.navigator.exception.ResourceNotFoundException;
 import com.solvd.navigator.service.ICalculate;
+import com.solvd.navigator.service.IPointService;
 import com.solvd.navigator.service.IRouteService;
+import com.solvd.navigator.service.ISegmentService;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,9 +18,9 @@ import java.util.List;
 
 public class RouteServiceImpl implements IRouteService, ICalculate {
 
-    private final RouteDaoImpl routeDao;
-    private final SegmentServiceImpl segmentService;
-    private final PointServiceImpl pointService;
+    private final IRouteDao routeDao;
+    private final ISegmentService segmentService;
+    private final IPointService pointService;
 
     public RouteServiceImpl() {
         routeDao = new RouteDaoImpl();
@@ -133,7 +136,7 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
 
     private void buildRouteWithSameStartAndDestination(Trip trip, Route route, List<Point> routePoints, Point destinationPoint, Point startPoint) {
         System.out.println("Start point - " + trip.getStartPoint().getCity());
-        System.out.println("End destination - " + trip.getDestinationPoint().getCity());
+        System.out.println("Destination point - " + trip.getDestinationPoint().getCity());
         System.out.println("Route length is - " + 0 + " km");
         route.setDistance(0);
         routePoints.add(destinationPoint);
@@ -194,7 +197,7 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
 
     private void getTripInformation(Trip trip, List<Point> routePoints, int routeLength) {
         System.out.println("Start point - " + trip.getStartPoint().getCity());
-        System.out.println("End destination - " + trip.getDestinationPoint().getCity());
+        System.out.println("Destination point - " + trip.getDestinationPoint().getCity());
         System.out.println("Route length is - " + routeLength + " km");
         System.out.print("Route will be laying through: ");
         routePoints.forEach(point -> System.out.print(point.getCity() + " "));

@@ -1,5 +1,6 @@
 package com.solvd.navigator.service.impl;
 
+import com.solvd.navigator.dao.INavigatorDao;
 import com.solvd.navigator.dao.impl.NavigatorDaoImpl;
 import com.solvd.navigator.domain.Navigator;
 import com.solvd.navigator.exception.ResourceNotFoundException;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class NavigatorService implements INavigatorService {
 
-    private final NavigatorDaoImpl navigatorDao;
+    private final INavigatorDao navigatorDao;
 
     public NavigatorService() {
         navigatorDao = new NavigatorDaoImpl();

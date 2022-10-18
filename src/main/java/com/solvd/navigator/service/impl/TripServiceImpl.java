@@ -1,11 +1,15 @@
 package com.solvd.navigator.service.impl;
 
+import com.solvd.navigator.dao.ITripDao;
 import com.solvd.navigator.dao.impl.TripDaoImpl;
 import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Route;
 import com.solvd.navigator.domain.TravelType;
 import com.solvd.navigator.domain.Trip;
 import com.solvd.navigator.exception.ResourceNotFoundException;
+import com.solvd.navigator.service.IBusRouteService;
+import com.solvd.navigator.service.IPointService;
+import com.solvd.navigator.service.IRouteService;
 import com.solvd.navigator.service.ITripService;
 import com.solvd.navigator.terminal.InputUtils;
 import com.solvd.navigator.terminal.ScannerData;
@@ -15,10 +19,10 @@ import java.util.Scanner;
 
 public class TripServiceImpl implements ITripService {
 
-    private final PointServiceImpl pointService;
-    private final RouteServiceImpl routeService;
-    private final TripDaoImpl tripDao;
-    private final BusRouteServiceImpl busRouteService;
+    private final IPointService pointService;
+    private final IRouteService routeService;
+    private final ITripDao tripDao;
+    private final IBusRouteService busRouteService;
 
     public TripServiceImpl() {
         pointService = new PointServiceImpl();
