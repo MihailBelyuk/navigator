@@ -1,7 +1,6 @@
 package com.solvd.navigator.dao;
 
 import com.solvd.navigator.domain.Navigator;
-import com.solvd.navigator.domain.Point;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,4 +16,5 @@ public interface INavigatorDao {
     void delete(Navigator navigator);
 
     List<Navigator> findAll();
+
 }

@@ -15,4 +15,5 @@ public interface INavigatorService {
     void delete(Navigator navigator);
 
     List<Navigator> getAll();
+
 }

@@ -1,12 +1,10 @@
 package com.solvd.navigator.service;
 
 import com.solvd.navigator.domain.Point;
-import com.solvd.navigator.domain.Trip;
 
 import java.util.List;
 
 public interface IPointService {
-
 
     void create(Point point);
 

@@ -17,9 +17,10 @@
     </environments>
     <mappers>
         <mapper resource="database/mapper/PointMapper.xml"/>
-<!--        <mapper resource="database/mapper/NavigatorMapper.xml"/>-->
-<!--        <mapper resource="database/mapper/RouteMapper.xml"/>-->
+        <mapper resource="database/mapper/NavigatorMapper.xml"/>
+        <mapper resource="database/mapper/RouteMapper.xml"/>
         <mapper resource="database/mapper/SegmentMapper.xml"/>
-<!--        <mapper resource="database/mapper/TripMapper.xml"/>-->
+        <mapper resource="database/mapper/TripMapper.xml"/>
+        <mapper resource="database/mapper/BusRouteMapper.xml"/>
     </mappers>
 </configuration>

@@ -4,8 +4,7 @@ public class Trip {
 
     private Long id;
     private TravelType travelType;
-    private AlternativeRoute alternativeRoute;
-    private ShortRoute shortRoute;
+    private Route route;
     private Point startPoint;
     private Point finishPoint;
 
@@ -25,20 +24,12 @@ public class Trip {
         this.travelType = travelType;
     }
 
-    public AlternativeRoute getAlternativeRoute() {
-        return alternativeRoute;
+    public Route getRoute() {
+        return route;
     }
 
-    public void setAlternativeRoute(AlternativeRoute alternativeRoute) {
-        this.alternativeRoute = alternativeRoute;
-    }
-
-    public ShortRoute getShortRoute() {
-        return shortRoute;
-    }
-
-    public void setShortRoute(ShortRoute shortRoute) {
-        this.shortRoute = shortRoute;
+    public void setRoute(Route route) {
+        this.route = route;
     }
 
     public Point getStartPoint() {
@@ -49,11 +40,23 @@ public class Trip {
         this.startPoint = startPoint;
     }
 
-    public Point getFinishPoint() {
+    public Point getDestinationPoint() {
         return finishPoint;
     }
 
     public void setFinishPoint(Point finishPoint) {
         this.finishPoint = finishPoint;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Trip{");
+        sb.append("id=").append(id);
+        sb.append(", travelType=").append(travelType);
+        sb.append(", route=").append(route);
+        sb.append(", startPoint=").append(startPoint);
+        sb.append(", finishPoint=").append(finishPoint);
+        sb.append('}');
+        return sb.toString();
     }
 }

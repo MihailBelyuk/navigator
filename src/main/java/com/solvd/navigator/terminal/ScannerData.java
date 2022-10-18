@@ -6,7 +6,7 @@ public class ScannerData {
 
     private String startPointInput;
     private String endPointInput;
-    private TravelType travelType;
+    private TravelType travelTypeInput;
 
     public String getStartPointInput() {
         return startPointInput;
@@ -16,7 +16,7 @@ public class ScannerData {
         this.startPointInput = startPointInput;
     }
 
-    public String getEndPointInput() {
+    public String getDestinationPointInput() {
         return endPointInput;
     }
 
@@ -24,11 +24,11 @@ public class ScannerData {
         this.endPointInput = endPointInput;
     }
 
-    public TravelType getTravelType() {
-        return travelType;
+    public TravelType getTravelTypeInput() {
+        return travelTypeInput;
     }
 
-    public void setTravelType(TravelType travelType) {
-        this.travelType = travelType;
+    public void setTravelTypeInput(TravelType travelTypeInput) {
+        this.travelTypeInput = travelTypeInput;
     }
 }

@@ -1,5 +1,6 @@
 package com.solvd.navigator.service;
 
+import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Route;
 import com.solvd.navigator.domain.Trip;
 
@@ -17,7 +18,8 @@ public interface IRouteService {
 
     List<Route> getAll();
 
-    void findShortestRoute();
+    void createRoutePoints(Route route, List<Point> routePoints);
 
-    Route findAlternativeRoute(Trip trip);
+    Route findRoute(Trip trip);
+
 }

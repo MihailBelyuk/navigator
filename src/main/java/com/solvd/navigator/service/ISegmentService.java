@@ -6,7 +6,6 @@ import java.util.List;
 
 public interface ISegmentService {
 
-
     void create(Segment segment);
 
     Segment getById(Long id);
@@ -16,4 +15,5 @@ public interface ISegmentService {
     void delete(Segment segment);
 
     List<Segment> getAll();
+
 }
