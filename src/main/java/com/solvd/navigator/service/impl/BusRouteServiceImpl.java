@@ -5,7 +5,7 @@ import com.solvd.navigator.dao.impl.BusRouteDaoImpl;
 import com.solvd.navigator.domain.BusRoute;
 import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Trip;
-import com.solvd.navigator.exception.ResourceNotFoundException;
+import com.solvd.navigator.domain.exception.ResourceNotFoundException;
 import com.solvd.navigator.service.IBusRouteService;
 
 import java.util.ArrayList;

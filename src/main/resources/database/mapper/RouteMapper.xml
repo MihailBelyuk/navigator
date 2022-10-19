@@ -9,13 +9,19 @@
 
     <select id="findById" resultMap="RouteResultMap">
         select r.id as route_id, r.distance as route_distance, p.id as point_id, p.city as point_city, p.indx as
-        point_index from routes r left join route_points rp on r.id = rp.route_id left join points on rp.point_id = p.id
+        point_index
+        from routes r left
+        join route_points rp on r.id = rp.route_id
+        left join points on rp.point_id = p.id
         where r.id = #{id}
     </select>
 
     <select id="findAll" resultMap="RouteResultMap">
         select r.id as route_id, r.distance as route_distance, p.id as point_id, p.city as point_city, p.indx as
-        point_index from routes r left join route_points rp on r.id = rp.route_id left join points p on rp.point_id = p.id
+        point_index
+        from routes r
+        left join route_points rp on r.id = rp.route_id
+        left join points p on rp.point_id = p.id
     </select>
 
     <delete id="delete">

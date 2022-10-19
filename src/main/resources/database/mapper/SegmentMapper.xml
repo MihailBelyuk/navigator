@@ -8,9 +8,11 @@
     </insert>
 
     <select id="findById" resultMap="SegmentResultMap">
-        select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from
-        segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id where s.id =
-        #{id}
+        select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city
+        from segments s
+        left join segment_points sp on segment_id = s.id
+        left join points p on point_id = p.id
+        where s.id = #{id}
     </select>
 
     <update id="update">
@@ -22,8 +24,10 @@
     </delete>
 
     <select id="findAll" resultMap="SegmentResultMap">
-        select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city from
-        segments s left join segment_points sp on segment_id = s.id left join points p on point_id = p.id
+        select s.id as segment_id, s.name as segment_name, s.length as segment_length, p.city as point_city
+        from segments s
+        left join segment_points sp on segment_id = s.id
+        left join points p on point_id = p.id
     </select>
 
     <resultMap id="SegmentResultMap" type="com.solvd.navigator.domain.Segment" autoMapping="false">
