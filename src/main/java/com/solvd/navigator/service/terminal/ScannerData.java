@@ -1,4 +1,4 @@
-package com.solvd.navigator.terminal;
+package com.solvd.navigator.service.terminal;
 
 import com.solvd.navigator.domain.TravelType;
 

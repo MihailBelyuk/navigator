@@ -3,10 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.solvd.navigator.dao.IBusRouteDao">
 
-<select id="findAll" resultMap="BusRouteResultMap">
-    select b.id as bus_route_id, b.name as bus_route_name, p.id as point_id, p.city as point_city, p.indx as point_index
-    from bus_routes b left join bus_route_points brp on b.id = brp.bus_route_id left join points p on brp.point_id = p.id
-</select>
+    <select id="findAll" resultMap="BusRouteResultMap">
+        select b.id as bus_route_id, b.name as bus_route_name, p.id as point_id, p.city as point_city, p.indx as
+        point_index
+        from bus_routes b
+        left join bus_route_points brp on b.id = brp.bus_route_id
+        left join points p on brp.point_id = p.idgi
+    </select>
 
     <resultMap id="BusRouteResultMap" type="com.solvd.navigator.domain.BusRoute">
         <id property="id" column="bus_route_id"/>
