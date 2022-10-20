@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class TripTest {
+public class TripServiceImplTest {
 
     private ITripService tripService;
 

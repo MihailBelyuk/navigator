@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-public class DbConnectivityTest {
+public class MyBatisConfigTest {
 
     @Test(testName = "Check if db properties file exist", dataProvider = "dbPropertiesFilePath",
             dataProviderClass = DataProviderClass.class)

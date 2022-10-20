@@ -5,12 +5,12 @@
 <suite name="Bus route and point functionality testing" parallel="methods" data-provider-thread-count="5">
     <test name="Bus route test">
         <classes>
-            <class name="com.solvd.navigator.BusRouteTest">
+            <class name="com.solvd.navigator.BusRouteServiceImplTest">
                 <methods>
                     <include name="shouldFindStraightBusRoute"/>
                 </methods>
             </class>
-            <class name="com.solvd.navigator.PointTest">
+            <class name="com.solvd.navigator.PointServiceImplTest">
                 <methods>
                     <include name="shouldFindStraightBusRouteMatchingTrip"/>
                     <include name="checkIfPointCanBeCreatedInDb"/>
@@ -19,14 +19,14 @@
                     <include name="providedCityNameShouldMatchAnyPointFromDb"/>
                 </methods>
             </class>
-            <class name="com.solvd.navigator.TripTest">
+            <class name="com.solvd.navigator.TripServiceImplTest">
                 <methods>
                     <include name="checkIfThrowsResourceNotFoundException"/>
                     <include name="checkIfRetrievedTripIsNotNull"/>
                     <include name="checkIfRetrievedObjectsAreInstanceOfTrip"/>
                 </methods>
             </class>
-            <class name="com.solvd.navigator.DbConnectivityTest">
+            <class name="com.solvd.navigator.MyBatisConfigTest">
                 <methods>
                     <include name="checkIfDbPropertiesFileExist"/>
                 </methods>

@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class BusRouteTest {
+public class BusRouteServiceImplTest {
 
     private IBusRouteService busRouteService;
 

@@ -11,7 +11,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
-public class PointTest {
+public class PointServiceImplTest {
 
     private IPointService pointService;
     private Point point;
