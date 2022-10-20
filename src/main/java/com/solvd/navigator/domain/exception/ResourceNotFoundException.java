@@ -1,4 +1,4 @@
-package com.solvd.navigator.exception;
+package com.solvd.navigator.domain.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 

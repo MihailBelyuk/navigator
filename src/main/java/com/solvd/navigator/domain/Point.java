@@ -23,7 +23,7 @@ public class Point {
     }
 
     public void setCity(String city) {
-        this.city = city;
+        this.city = city.toUpperCase();
     }
 
     public Integer getIndex() {

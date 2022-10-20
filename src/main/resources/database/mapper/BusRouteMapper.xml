@@ -8,7 +8,15 @@
         point_index
         from bus_routes b
         left join bus_route_points brp on b.id = brp.bus_route_id
-        left join points p on brp.point_id = p.idgi
+        left join points p on brp.point_id = p.id
+    </select>
+
+    <select id="findById" resultMap="BusRouteResultMap">
+        select b.id as bus_route_id, b.name as bus_route_name, p.id as point_id, p.city as point_city, p.indx as
+        point_index
+        from bus_routes b
+        left join bus_route_points brp on b.id = brp.bus_route_id
+        left join points p on brp.point_id = p.id where b.id = #{id}
     </select>
 
     <resultMap id="BusRouteResultMap" type="com.solvd.navigator.domain.BusRoute">

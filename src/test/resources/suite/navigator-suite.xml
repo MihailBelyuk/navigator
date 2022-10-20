@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!---->
+<!--Three tests fail on purpose-->
+<!---->
+<suite name="Bus route and point functionality testing" parallel="methods" data-provider-thread-count="5">
+    <test name="Bus route test">
+        <classes>
+            <class name="com.solvd.navigator.BusRouteTest">
+                <methods>
+                    <include name="shouldFindStraightBusRoute"/>
+                </methods>
+            </class>
+            <class name="com.solvd.navigator.PointTest">
+                <methods>
+                    <include name="shouldFindStraightBusRouteMatchingTrip"/>
+                    <include name="checkIfPointCanBeCreatedInDb"/>
+                    <include name="checkIfPointCanBeDeletedFromDbById"/>
+                    <include name="shouldContainPointsInDb"/>
+                    <include name="providedCityNameShouldMatchAnyPointFromDb"/>
+                </methods>
+            </class>
+            <class name="com.solvd.navigator.TripTest">
+                <methods>
+                    <include name="checkIfThrowsResourceNotFoundException"/>
+                    <include name="checkIfRetrievedTripIsNotNull"/>
+                    <include name="checkIfRetrievedObjectsAreInstanceOfTrip"/>
+                </methods>
+            </class>
+            <class name="com.solvd.navigator.DbConnectivityTest">
+                <methods>
+                    <include name="checkIfDbPropertiesFileExist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

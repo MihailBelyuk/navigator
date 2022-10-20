@@ -6,7 +6,7 @@ import com.solvd.navigator.domain.Point;
 import com.solvd.navigator.domain.Route;
 import com.solvd.navigator.domain.TravelType;
 import com.solvd.navigator.domain.Trip;
-import com.solvd.navigator.exception.ResourceNotFoundException;
+import com.solvd.navigator.domain.exception.ResourceNotFoundException;
 import com.solvd.navigator.service.IBusRouteService;
 import com.solvd.navigator.service.IPointService;
 import com.solvd.navigator.service.IRouteService;
@@ -77,7 +77,7 @@ public class TripServiceImpl implements ITripService {
             for (Point point : allPoints) {
                 destinationPoint = getDestinationPoint(scannerData, destinationPoint, point);
             }
-            checkStartAndDestinationPoints(startPoint, destinationPoint);
+            writeUnknownPointMessage(startPoint, destinationPoint);
         }
         buildTrip(scannerData, trip, startPoint, destinationPoint);
         checkTravelType(trip);
@@ -99,7 +99,7 @@ public class TripServiceImpl implements ITripService {
         return startPoint;
     }
 
-    private void checkStartAndDestinationPoints(Point startPoint, Point destinationPoint) {
+    private void writeUnknownPointMessage(Point startPoint, Point destinationPoint) {
         if (startPoint == null || destinationPoint == null) {
             System.out.println("Unknown city start point or destination point. Please try again.");
         }
