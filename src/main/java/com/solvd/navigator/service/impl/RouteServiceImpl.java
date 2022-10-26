@@ -55,9 +55,7 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
 
     @Override
     public void createRoutePoints(Route route, List<Point> routePoints) {
-        for (Point point : routePoints) {
-            routeDao.insertRoutePoints(route, point);
-        }
+        routePoints.forEach(point -> routeDao.insertRoutePoints(route, point));
     }
 
     @Override
@@ -72,8 +70,8 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
         Point startPoint = null;
         String prevCity = null;
         for (Point point : allPoints) {
-            startPoint = getCheckedStartPoint(trip, startPoint, point);
-            destinationPoint = getCheckedDestinationPoint(trip, destinationPoint, point);
+            startPoint = checkStartPoint(trip, startPoint, point);
+            destinationPoint = checkDestinationPoint(trip, destinationPoint, point);
         }
         if (startPoint != null && destinationPoint != null) {
             if (startPoint.getCity().equals(destinationPoint.getCity())) {
@@ -88,7 +86,7 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
                             List<Point> segmentPoints = segment.getPoints();
                             for (Point point1 : segmentPoints) {
                                 if (point1.getCity().equals(point.getCity())) {
-                                    processedPoint = getProcessedPoint(segmentPoints, point1);
+                                    processedPoint = processPoint(segmentPoints, point1);
                                     processedPoint.setValue(0);
                                     for (Point value : allPoints) {
                                         if (value.getCity().equals(processedPoint.getCity()) & value.getValue() > 0) {
@@ -120,14 +118,14 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
         return route;
     }
 
-    private Point getCheckedDestinationPoint(Trip trip, Point destinationPoint, Point point) {
+    private Point checkDestinationPoint(Trip trip, Point destinationPoint, Point point) {
         if (point.getCity().equals(trip.getDestinationPoint().getCity())) {
             destinationPoint = point;
         }
         return destinationPoint;
     }
 
-    private Point getCheckedStartPoint(Trip trip, Point startPoint, Point point) {
+    private Point checkStartPoint(Trip trip, Point startPoint, Point point) {
         if (point.getCity().equals(trip.getStartPoint().getCity())) {
             startPoint = buildPoint(point);
         }
@@ -162,7 +160,7 @@ public class RouteServiceImpl implements IRouteService, ICalculate {
         }
     }
 
-    private Point getProcessedPoint(List<Point> segmentPoints, Point point1) {
+    private Point processPoint(List<Point> segmentPoints, Point point1) {
         Point processedPoint;
         if (point1.equals(segmentPoints.get(0))) {
             processedPoint = segmentPoints.get(1);

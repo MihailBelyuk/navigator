@@ -4,7 +4,7 @@
 <mapper namespace="com.solvd.navigator.dao.IPointDao">
 
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        insert into points(city, indx) values (#{city}, #{indx})
+        insert into points(city, indx, value) values (#{city}, #{index}, #{value})
     </insert>
 
     <select id="findById" resultMap="PointResultMap">
